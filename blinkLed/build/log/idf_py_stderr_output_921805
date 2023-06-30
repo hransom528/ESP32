@@ -1,0 +1,12 @@
+/home/harris/Documents/Github/ESP32/blinkLed/main/blinkLed.c: In function 'app_main':
+/home/harris/Documents/Github/ESP32/blinkLed/main/blinkLed.c:4:29: error: implicit declaration of function 'pcTaskGetName' [-Werror=implicit-function-declaration]
+    4 |         char *ourTaskName = pcTaskGetName(NULL);
+      |                             ^~~~~~~~~~~~~
+/home/harris/Documents/Github/ESP32/blinkLed/main/blinkLed.c:4:29: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+/home/harris/Documents/Github/ESP32/blinkLed/main/blinkLed.c:5:9: error: implicit declaration of function 'ESPLOG' [-Werror=implicit-function-declaration]
+    5 |         ESPLOG(ourTaskName, "Hello, starting up!\n");
+      |         ^~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:76: esp-idf/main/CMakeFiles/__idf_main.dir/blinkLed.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:4481: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
